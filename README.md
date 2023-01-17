@@ -1,4 +1,5 @@
 # robofriends
+
 React + Redux
 
 To run the project:
@@ -7,4 +8,4 @@ To run the project:
 2. Run `npm install`
 3. Run `npm start`
 
-*visit https://zerotomastery.io/ for more*
+<!-- *visit https://zerotomastery.io/ for more* -->
