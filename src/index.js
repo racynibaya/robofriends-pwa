@@ -8,9 +8,9 @@ import { createLogger } from 'redux-logger';
 import 'tachyons';
 
 import App from './containers/App';
-import registerServiceWorker from './serviceWorker';
+
 import { requestRobots, searchRobots } from './reducers';
-import * as serviceWorker from './serviceWorker';
+import register from './serviceWorker';
 import './index.css';
 
 const logger = createLogger();
@@ -32,4 +32,4 @@ root.render(
 //   </Provider>,
 //   document.getElementById('root')
 // );
-serviceWorker.register();
+register();
