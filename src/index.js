@@ -6,11 +6,11 @@ import { Provider } from 'react-redux';
 import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import 'tachyons';
-
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import App from './containers/App';
 
 import { requestRobots, searchRobots } from './reducers';
-import register from './serviceWorker';
+
 import './index.css';
 
 const logger = createLogger();
@@ -32,4 +32,5 @@ root.render(
 //   </Provider>,
 //   document.getElementById('root')
 // );
-register();
+
+serviceWorkerRegistration.register();
