@@ -26,7 +26,8 @@ const mapDispatchToProps = dispatch => {
     onRequestRobots: () => dispatch(requestRobots()),
   };
 };
-
+let viewportHeight = window.innerHeight;
+let viewportWidth = window.innerWidth;
 class App extends Component {
   componentDidMount() {
     this.props.onRequestRobots();
@@ -39,7 +40,7 @@ class App extends Component {
     });
     return (
       <div className='tc'>
-        <h1 className='f1'>RoboFriends</h1>
+        <h1>RoboFriends</h1>
         <SearchBox searchChange={onSearchChange} />
         <Scroll>
           {isPending ? (
